@@ -10,13 +10,23 @@ body {
   transition: all 0.5s;
 }
 
-.navbar-inverse .navbar-nav>li>a {
-    color: #bbb;
+@media (max-width: 400px) {
+
+  .navbar-header {
+    position: relative;
+  }
+
+  .navbar img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 70%;
+  }
 }
 
-.navbar img {
-  width:70%;
-  height:70%;
+.navbar-inverse .navbar-nav>li>a {
+    color: #bbb;
 }
 
 .cbp-af-header-shrink {
